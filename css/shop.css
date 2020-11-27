@@ -1,0 +1,229 @@
+
+.shop-container {
+  padding-top: 10vh;
+  display: grid;
+  grid-template-rows: 150px 1fr 150px;
+  grid-template-columns: 1fr;
+  background: #f7f7f7;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.grid-subdiv-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  background: #f7f7f7;
+  color: #DD9886;
+}
+.grid-subdiv-1 h2{
+  font-size: 30px;
+}
+.grid-subdiv-1 p {
+  width: 80%;
+}
+
+.grid-subdiv-2 {
+  background: #f0f0f0;
+}
+
+.grid-subdiv-3 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0.7vh;
+  grid-row-gap: 8vh;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+  padding-bottom: 8vh;
+
+}
+
+.shopping-card-container {
+  width: 250px;
+  background: white;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.prodpic {
+  cursor: pointer;
+  width: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+.shoplink {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media screen and (max-width: 952px) {
+  body {
+    overflow-x: hidden;
+  }
+    .grid-subdiv-3 {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      justify-items: center;
+      align-items: center;
+      justify-self: center;
+
+  }
+}
+
+@media screen and (max-width: 768px){
+  body {
+    overflow-x: hidden;
+  }
+
+  .grid-subdiv-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+
+  }
+
+    .grid-subdiv-1 {
+        font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .shop-container {
+      display: grid;
+      grid-template-rows: 25vh 1fr 25vh;
+      grid-template-columns: 1fr;
+      background: #f7f7f7;
+    }
+
+    .grid-subdiv-3 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      justify-items: center;
+      align-items: center;
+      justify-self: center;
+
+    }
+
+    .grid-subdiv-1 {
+          font-size: 12px;
+
+    }
+    .shopping-card-container > img {
+      width: 100%;
+      height: auto;
+    }
+
+    .shopping-card-container {
+      width: 100%;
+      padding: 10px;
+    }
+
+}
+
+
+
+.grid-subdiv-3 div {
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.grid-shopping-cart-icon {
+  width: 20px;
+  height: 20px;
+}
+.shopping-card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shopping-card-info h2 {
+
+  color: #DD9886;
+}
+.shopping-card-header{
+  padding: 10px;
+
+}
+.shopping-card-header h2{
+
+  text-align: left;
+}
+.shopping-card-price-section_one{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 10px;
+
+}
+.shopping-card-price-section_one input{
+  display: none;
+}
+.shopping-card-price-section_one label {
+  outline: none;
+  border-radius: 30px;
+  padding: 6px;
+  background-color: white;
+  border: 2px solid #db7f67;
+  font-weight: 600;
+  color: #db7f67;
+  font-size: 11px;
+  cursor: pointer;
+}
+.shopping-card-price-section_one label:hover{
+  color: white;
+  background: #db7f67;
+  transition-duration: 0.2s;
+}
+.shopping-card-price-section_one input[type=radio]:checked + label{
+  color: white;
+  background: #db7f67;
+  transition-duration: 0.2s;
+}
+.shopping-card-price-section_two{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.shopping-card-price-section_two button{
+  width: 50%;
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: linear-gradient(to right, #DD9886, #F2D2B3);
+  font-weight: 400;
+  cursor: pointer;
+}
+.shopping-card-price-section_two button:active{
+  background: linear-gradient(to right, #bf8475, #d6ba9f);
+}
+.p-price {
+  font-weight: bold;
+  font-size: 20px;
+}
+#prodpic {
+  cursor: pointer;
+}

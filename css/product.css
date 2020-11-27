@@ -1,0 +1,140 @@
+body {
+  background: #F8F4F4;
+}
+.product-container {
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  justify-self: center;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+   "pic header"
+   "pic main"
+   "pic buttons"
+   "pic price"
+   "pic func";
+   height: 450px;
+   font-family: 'Raleway', sans-serif;
+   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+   border-radius: 10px;
+   background: white;
+}
+
+.grid-col-1 {
+  grid-area: pic;
+
+}
+.grid-row-1 {
+  grid-area: header;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 50px 50px 0px 50px;
+}
+.grid-row-2 {
+  grid-area: main;
+  font-size: 12px;
+  line-height: 2;
+  text-align: left;
+  padding: 0px 50px 0px 50px;
+}
+.grid-row-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-area: buttons;
+  padding: 0px 50px 0px 50px;
+
+}
+.grid-row-3 input {
+  display: none;
+}
+.grid-row-3 label{
+  margin-right: 10px;
+  outline: none;
+  border-radius: 30px;
+  padding: 8px;
+  background-color: white;
+  border: 2px solid #db7f67;
+  font-weight: 600;
+  color: #db7f67;
+}
+.grid-row-3 label:hover {
+  background-color: #db7f67;
+  color: white;
+  transition-duration: .2s;
+}
+.grid-row-3 input[type=radio]:checked + label{
+  color: white;
+  background: #db7f67;
+  transition-duration: 0.2s;
+}
+.grid-row-4 {
+  grid-area: price;
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 50px 0px 50px;
+
+}
+#imgminus{
+  cursor: pointer;
+}
+#imgplus{
+  cursor: pointer;
+}
+.grid-row-5 {
+  grid-area: func;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 50px 50px;
+
+}
+.plus-minus {
+  display: flex;
+  justify-content: center;
+}
+.number {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  background: #F8F4F4;
+  padding: 0px 40px 0px 40px;
+  border-radius: 10px;
+}
+.add-to-card-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.grid-row-5 img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.grid-row-5 button {
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  padding-left: 15px;
+    padding-right: 15px;
+    background: linear-gradient(to right, #DD9886, #F2D2B3);
+  font-weight: 600;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.grid-row-5 button:active {
+  background: linear-gradient(to right, #bf8475, #d6ba9f);
+}
+.grid-col-1 img{
+  width: 450px;
+  height: 450px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+}
